@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebStorage", "WebStorage\WebStorage.csproj", "{AF852827-6AE7-4763-9EEA-27DC050771EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{978112AD-5EF0-4A8E-854C-44D747ED5987}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MemoryStorage", "MemoryStorage\MemoryStorage.csproj", "{373733F8-40EF-47CD-993F-E023D34F2675}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XmlConverter", "XmlConverter\XmlConverter.csproj", "{9148DFA0-C552-419B-9705-AA0538B6F560}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoStorage", "MongoStorage\MongoStorage.csproj", "{DDB54CDE-535C-49B6-93F1-CCDC7033257A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageTests", "TestStorage\StorageTests.csproj", "{33C82F65-F48F-41C8-BCC4-AC46BEAA74ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF852827-6AE7-4763-9EEA-27DC050771EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF852827-6AE7-4763-9EEA-27DC050771EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF852827-6AE7-4763-9EEA-27DC050771EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF852827-6AE7-4763-9EEA-27DC050771EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978112AD-5EF0-4A8E-854C-44D747ED5987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978112AD-5EF0-4A8E-854C-44D747ED5987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978112AD-5EF0-4A8E-854C-44D747ED5987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978112AD-5EF0-4A8E-854C-44D747ED5987}.Release|Any CPU.Build.0 = Release|Any CPU
+		{373733F8-40EF-47CD-993F-E023D34F2675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373733F8-40EF-47CD-993F-E023D34F2675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373733F8-40EF-47CD-993F-E023D34F2675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{373733F8-40EF-47CD-993F-E023D34F2675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9148DFA0-C552-419B-9705-AA0538B6F560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9148DFA0-C552-419B-9705-AA0538B6F560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9148DFA0-C552-419B-9705-AA0538B6F560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9148DFA0-C552-419B-9705-AA0538B6F560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB54CDE-535C-49B6-93F1-CCDC7033257A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB54CDE-535C-49B6-93F1-CCDC7033257A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB54CDE-535C-49B6-93F1-CCDC7033257A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB54CDE-535C-49B6-93F1-CCDC7033257A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33C82F65-F48F-41C8-BCC4-AC46BEAA74ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33C82F65-F48F-41C8-BCC4-AC46BEAA74ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33C82F65-F48F-41C8-BCC4-AC46BEAA74ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33C82F65-F48F-41C8-BCC4-AC46BEAA74ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F023E15-7A8D-4F61-BE20-5A0DB6F9CEA7}
+	EndGlobalSection
+EndGlobal
