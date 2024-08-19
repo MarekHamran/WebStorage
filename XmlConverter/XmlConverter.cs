@@ -7,8 +7,19 @@ using System.Xml;
 
 namespace XmlConverter
 {
+	/// <summary>
+	/// Converts <<see cref="Document"/>>  to json
+	/// </summary>
+	/// <seealso cref="Interfaces.IConverter" />
 	public class XmlConverter : IConverter
 	{
+		/// <summary>
+		/// Converts the specified <see cref="T:Interfaces.Document" />.
+		/// </summary>
+		/// <param name="document">The document.</param>
+		/// <returns>
+		/// string that can be write to output (e.g. http response)
+		/// </returns>
 		public string Convert(Document document)
 		{
 			StringBuilder sb = new StringBuilder();
@@ -54,7 +65,7 @@ namespace XmlConverter
 								writer.WriteEndElement();
 								break;
 							default:
-								writer.WriteElementString(prop.Name, prop.Value.ToString());
+								writer.WriteElementString(prop.Name, prop.Value.GetRawText());
 								break;
 
 						}

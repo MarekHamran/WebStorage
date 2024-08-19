@@ -8,6 +8,10 @@ using XmlConverter;
 
 namespace WebStorage.Controllers
 {
+	/// <summary>
+	/// Controller for web storage of json documents
+	/// </summary>
+	/// <seealso cref="Microsoft.AspNetCore.Mvc.ControllerBase" />
 	[ApiController]
 	[Route("documents")]
 	public class WebStorageController : ControllerBase
@@ -16,12 +20,22 @@ namespace WebStorage.Controllers
 		private readonly ILogger<WebStorageController> _logger;
 		private readonly IStorage _storage;
 
-		public WebStorageController(ILogger<WebStorageController> logger, IStorage storage)
+		/// <summary>
+		/// Initializes a new instance of the <see cref="WebStorageController"/> class.
+		/// </summary>
+		/// <param name="logger">The logger.</param>
+		/// <param name="storage">The storage.</param>
+		public WebStorageController(ILogger<WebStorageController> logger, IConfiguration configuration, IStorage storage)
 		{
 			_logger = logger;
 			_storage = storage;
 		}
 
+		/// <summary>
+		/// Gets document with specified id as json
+		/// </summary>
+		/// <param name="id">The identifier.</param>
+		/// <returns></returns>
 		[HttpGet]
 		[AcceptHeader("application/json")]
 		[Route("{id}")]
@@ -36,9 +50,12 @@ namespace WebStorage.Controllers
 			{
 				return NotFound(ex.Message);
 			}
-			return Problem();
 		}
 
+		/// <summary>
+		/// Gets document with specified id as XML
+		/// </summary>
+		/// <param name="id">The identifier.</param>
 		[HttpGet]
 		[AcceptHeader("application/xml")]
 		[Route("{id}")]
@@ -60,6 +77,12 @@ namespace WebStorage.Controllers
 			}
 		}
 
+		/// <summary>
+		/// Posts document
+		/// Document with specified id must not exists
+		/// </summary>
+		/// <param name="content">The content.</param>
+		/// <returns></returns>
 		[HttpPost]
 		public async Task<ActionResult> Post([FromBody] Document content)
 		{
@@ -80,6 +103,11 @@ namespace WebStorage.Controllers
 			return Accepted();
 		}
 
+		/// <summary>
+		/// Update document with specified id
+		/// </summary>
+		/// <param name="content">The content.</param>
+		/// <returns></returns>
 		[HttpPut]
 		public async Task<ActionResult> Put([FromBody] Document content)
 		{
